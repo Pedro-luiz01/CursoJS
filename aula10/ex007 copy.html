@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+</head>
+<body>
+    <h1>Digite suas informações</h1>
+    nome <input type="text" name="nome" id="nome">
+    idade <input type="number" name="idade" id="idade">
+    cidade <input type="text" name="cidade" id="cidade">
+    email <input type="email" name="email" id="email">
+    masculino <input type="radio" name="genero" id="masculino">
+    feminino <input type="radio" name="genero" id="feminino">
+    <input type="button" value="enviar" onclick="enviar()">
+    <div id="res">Seus dados</div>
+    <script>
+        function somar(){
+        var res = window.document.getElementById('res')
+        var nome = window.document.getElementById('nome')
+        var idade = window.document.getElementById('idade')
+        var cidade = window.document.getElementById('cidade')
+        var email = window.document.getElementById('email')
+        var sexo = window.document.getElementsByName('genero')
+        var s = nome + idade
+        res.innerText = `Seu nome e sua idade é: ${s}`
+        
+        }
+    </script>
+</body>
+</html>
